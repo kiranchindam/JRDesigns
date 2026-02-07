@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JRDesign</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img2/JR-new-logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Teko:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Add this in your HTML head section -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
+      
+
+    <!-- <script>(function(w, d) { w.CollectId = "680f28c21f59b1cbec8b0a70"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script> -->
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="img2/56-x-74.png" alt="Icon">
+    </div>
+    <!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <div class="logo-container">
+            <img src="img2/JR-new-logo.png" alt="JR Logo">
+        </div>
+        <h1 class="text-primary m-0" style="font-family: 'Playfair Display', 'Raleway', serif; margin-left: 130px;">
+            <span style="color: #5c0d0d;">JR</span><span style="color: #c89f54;"> Design</span>
+        </h1>
+    </a>
+
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                <div class="dropdown-menu dropdown-menu-end mt-0 border-0 shadow-sm">
+                    <!-- <a href="feature.html" class="dropdown-item">Our Features</a> -->
+                    <a href="project.html" class="dropdown-item">Our Projects</a>
+                    <a href="appointment.html" class="dropdown-item">Appointment</a>
+                    <a href="testimonial.html" class="dropdown-item">Portfolio</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="team.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get a free quote</a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<style>
+    .logo-container {
+        height: 80px;
+        width: 120px;
+        position: relative;
+        overflow: visible;
+        flex-shrink: 0;
+        display: inline-block;
+    }
+
+    .logo-container img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 80px;
+        width: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Ensure dropdown works properly on mobile */
+    .navbar .dropdown-menu {
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: auto;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown.show .dropdown-menu {
+        display: block;
+    }
+
+    /* Responsive dropdown fix */
+    @media (max-width: 991.98px) {
+        .navbar .dropdown-menu {
+            position: static;
+            float: none;
+            display: none;
+            margin-top: 0;
+            box-shadow: none;
+        }
+
+        .navbar .dropdown.show .dropdown-menu {
+            display: block;
+        }
+    }
+
+    /* Optional: Add smooth transition on dropdown */
+    .dropdown-menu {
+        transition: all 0.3s ease;
+    }
+</style>
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">Appointment</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Appointment</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+     <!-- Appointment Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="section-title">Appointment</h4>
+                <h1 class="display-5 mb-4">Make An Appointment To Start Your Dream Project</h1>
+                <p class="mb-4">Ready to design your perfect space? Schedule an appointment with JR Design today. Let’s transform your vision into a beautiful reality.</p>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-2">Call Us Now</p>
+                                <h3 class="mb-0">+91 98668 76934</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-2">Mail Us Now</p>
+                                <h3 class="mb-0">jeeturanainteriors@gmail.com</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <form action="https://formsubmit.co/JRDesignrhyd@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="index.html">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" style="height: 55px;" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" style="height: 55px;" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" name="mobile" placeholder="Your Mobile" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <select class="form-select" name="service" style="height: 55px;">
+                                <option selected>Choose Service</option>
+                                <option value="Interior Design">Interior Design</option>
+                                <option value="Modular Kitchen">Modular Kitchen</option>
+                                <option value="TV Unit">TV Unit</option>
+                                <option value="Wardrobe">Wardrobe</option>
+                                <option value="False Ceiling">False Ceiling</option>
+                                <option value="Pooja Unit">Pooja Unit</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="date" class="form-control" name="date" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="time" class="form-control" name="time" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Appointment End -->
+
+        
+
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Address</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Plot no. 4-152, Om nagar colony,Nr. Rock high school, Kismathpur village,Rajendranagar,Telangana</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 98668 76934</p>
+                    <div class="d-flex align-items-center mb-2 footer-email">
+    <i class="fa fa-envelope text-primary me-3"></i>
+    <span>jeeturanainteriors@gmail.com</span>
+</div>                    <div class="d-flex pt-2">
+                        <a class="btn btn-sm-square btn-outline-body me-1" href="https://wa.me/919347575904"><i class="fab fa-whatsapp"></i></a>
+                       <a class="btn btn-sm-square btn-outline-body me-0" href="https://www.instagram.com/JR_Design/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Address 2</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Plot no. 3.near Power House, Naka no.5,Bhandara Road, Pardi, Nagpur, Maharashtra</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 98668 76934</p>
+                    <div class="d-flex align-items-center mb-2 footer-email">
+    <i class="fa fa-envelope text-primary me-3"></i>
+    <span>jeeturanainteriors@gmail.com</span>
+</div>                    <div class="d-flex pt-2">
+                        <a class="btn btn-sm-square btn-outline-body me-1" href="https://wa.me/919347575904"><i class="fab fa-whatsapp"></i></a>
+                       <a class="btn btn-sm-square btn-outline-body me-0" href="https://www.instagram.com/JR_interio/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Services</h3>
+                    <a class="btn btn-link" href="about.html">About</a>
+                    <a class="btn btn-link" href="appointment.html">Appointment</a>
+                    <a class="btn btn-link" href="project.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Interior Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Stay Inspired</h3>
+                    <p>Get design tips, latest trends & our stunning transformations delivered to your inbox.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent text-light border-light w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
+                        <button type="button" class="btn py-2 px-4 position-absolute top-0 end-0 mt-2 me-2"
+                            style="background-color: #8b5c2d; color: #fff; font-weight: 600; border-radius: 30px;">
+                            Subscribe
+                        </button>
+                    </div>
+                </div> -->
+
+                
+                <!--<div class="col-lg-3 col-md-6">
+                    <div class="client-portal-container">
+                         Main Portal Card 
+                        <div class="client-portal-box bg-dark rounded p-4 text-center active">
+                            <div class="portal-icon mb-3">
+                                <i class="fas fa-user-shield fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="text-light mb-4">Client Portal</h5>
+                            <p class="text-muted mb-4">Access your interior project status</p>
+                
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-primary btn-hover-transform py-2 portal-action" data-action="login">
+                                    <i class="fas fa-sign-in-alt me-2"></i> Client Login
+                                </button>
+                                <button class="btn btn-outline-light btn-hover-transform py-2 portal-action" data-action="register">
+                                    <i class="fas fa-user-plus me-2"></i> Request Access
+                                </button>
+                            </div>
+                
+                            <div class="portal-security mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-lock me-1"></i> Secure & Confidential
+                                </small>
+                            </div>
+                        </div>
+                
+                        Login Form (hidden by default) 
+                        <div class="client-portal-box login-form bg-dark rounded p-4 text-center">
+                            <button class="btn btn-sm btn-link text-muted mb-3 back-button">
+                                <i class="fas fa-arrow-left me-1"></i> Back
+                            </button>
+                
+                            <h5 class="text-light mb-4">Client Login</h5>
+                
+                            <div class="mb-3 text-start">
+                                <label class="form-label text-muted small">Registered Email</label>
+                                <input type="email" class="form-control bg-dark text-light border-secondary">
+                            </div>
+                
+                            <div class="mb-4 text-start">
+                                <label class="form-label text-muted small">Password</label>
+                                <input type="password" class="form-control bg-dark text-light border-secondary">
+                            </div>
+                
+                            <button class="btn btn-primary w-100 py-2 mb-3 submit-btn">
+                                Access Portal
+                            </button>
+                
+                            <div class="alert alert-danger mt-3 d-none error-message">
+                                <small><i class="fas fa-exclamation-circle me-1"></i>
+                                Invalid credentials. Please contact our team at <a href="mailto:jeeturanainteriors@gmail.com" class="alert-link">jeeturanainteriors@gmail.com</a></small>
+                            </div>
+                        </div>
+                
+                       Registration Notice (hidden by default) 
+                        <div class="client-portal-box register-notice bg-dark rounded p-4 text-center">
+                            <button class="btn btn-sm btn-link text-muted mb-3 back-button">
+                                <i class="fas fa-arrow-left me-1"></i> Back
+                            </button>
+                
+                            <div class="portal-icon mb-3 text-warning">
+                                <i class="fas fa-info-circle fa-3x"></i>
+                            </div>
+                
+                            <h5 class="text-light mb-3">Request Portal Access</h5>
+                            <p class="text-muted mb-4">For new clients, please reach out to us directly</p>
+                
+                            <div class="alert alert-warning">
+                                <small><i class="fas fa-envelope me-1"></i>
+                                Contact <a href="mailto:jeeturanainteriors@gmail.com" class="alert-link">jeeturanainteriors@gmail.com</a> to request your login credentials</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>--->
+                
+                <style>
+                .client-portal-container {
+                    position: relative;
+                    height: 400px;
+                    perspective: 1000px;
+                }
+                
+                .client-portal-box {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    transition: all 0.6s ease;
+                    transform-style: preserve-3d;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    border: 1px solid rgba(255,255,255,0.1);
+                    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+                }
+                
+                .client-portal-box.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: rotateY(0deg);
+                }
+                
+                .client-portal-box.login-form {
+                    transform: rotateY(180deg);
+                }
+                
+                .client-portal-box.register-notice {
+                    transform: rotateY(180deg);
+                }
+                
+                .client-portal-box:hover {
+                    transform: translateY(-5px) rotateY(0deg);
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                    border-color: var(--primary);
+                }
+                
+                .btn-hover-transform {
+                    transition: all 0.3s ease;
+                }
+                
+                .btn-hover-transform:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+                
+                .portal-icon {
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .portal-icon:after {
+                    content: '';
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    background: rgba(13,110,253,0.2);
+                    border-radius: 50%;
+                    top: -10px;
+                    left: -10px;
+                    z-index: 0;
+                }
+                
+                .form-control {
+                    background-color: rgba(0,0,0,0.2);
+                    border-color: rgba(255,255,255,0.1);
+                    color: white;
+                }
+                
+                .form-control:focus {
+                    background-color: rgba(0,0,0,0.3);
+                    border-color: var(--primary);
+                    color: white;
+                    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25);
+                }
+                </style>
+                
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const container = document.querySelector('.client-portal-container');
+                    const mainCard = container.querySelector('.client-portal-box.active');
+                    const loginForm = container.querySelector('.login-form');
+                    const registerNotice = container.querySelector('.register-notice');
+                    const backButtons = container.querySelectorAll('.back-button');
+                    const submitBtn = container.querySelector('.submit-btn');
+                    const errorMessage = container.querySelector('.error-message');
+                
+                    // Handle portal actions
+                    document.querySelectorAll('.portal-action').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const action = this.getAttribute('data-action');
+                            mainCard.classList.remove('active');
+                
+                            if(action === 'login') {
+                                loginForm.classList.add('active');
+                                loginForm.style.transform = 'rotateY(0deg)';
+                            } else {
+                                registerNotice.classList.add('active');
+                                registerNotice.style.transform = 'rotateY(0deg)';
+                            }
+                        });
+                    });
+                
+                    // Handle back buttons
+                    backButtons.forEach(button => {
+                        button.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            loginForm.classList.remove('active');
+                            registerNotice.classList.remove('active');
+                            mainCard.classList.add('active');
+                
+                            // Reset forms
+                            loginForm.style.transform = 'rotateY(180deg)';
+                            registerNotice.style.transform = 'rotateY(180deg)';
+                            errorMessage.classList.add('d-none');
+                        });
+                    });
+                
+                    // Handle login submission
+                    submitBtn.addEventListener('click', function() {
+                        // Simulate login failure message
+                        errorMessage.classList.remove('d-none');
+                    });
+                });
+                </script>
+                
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">JRDesign</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="#">GenQtech Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/919866876934" target="_blank" class="whatsapp-float" style="position: fixed; bottom: 40px; left: 40px; z-index: 100;">
+    <i class="fab fa-whatsapp" style="font-size: 50px; color: white; background: #25D366; padding: 12px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.25); animation: pulse 2s infinite;"></i>
+</a>
+
+<style>
+    @keyframes pulse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.1);}
+        100% {transform: scale(1);}
+    }
+    
+    .whatsapp-float:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+</style>
+
+    <!-- JavaScript Libraries -->
+    <script src="../code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from www.JRinterio.in/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 03:50:49 GMT -->
+</html>
