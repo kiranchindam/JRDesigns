@@ -1216,3 +1216,15 @@ h6,
     font-weight: 600;
     color: var(--primary);
 }
+
+
+.brand-text {
+    margin-left: 15px;
+}
+
+/* Desktop only spacing */
+@media (min-width: 992px) {
+    .brand-text {
+        margin-left: 130px;
+    }
+}
