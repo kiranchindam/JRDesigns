@@ -1229,4 +1229,10 @@ h6,
     }
 }
 
+/* FORCE JUSTIFY TEXT SITEWIDE */
+p {
+  text-align: justify !important;
+  text-align-last: left;
+  hyphens: auto;
+}
 
